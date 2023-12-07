@@ -1,0 +1,264 @@
+.contact{
+    width: 100%;
+    margin-top: 5vw;
+    padding: 1vw 3vw;
+    padding-bottom: 2vw;
+    background-color: black;
+    color: white;
+    font-family: 'Hedvig Letters Serif', serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.contact .heading{
+    width: 100%;
+}
+.contact .heading h1{
+    font-size: 4vw;
+}
+.contact  p{
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact .main_secion{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.contact .main_secion .contact_info{
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   padding: 1vw;
+}
+.contact .main_secion .contact_info .card h2{
+font-size: 1.5vw;
+}
+.contact .main_secion .contact_form{
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.contact .main_secion .contact_form .inputs{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5vw;
+    width: 100%;
+}
+.contact .main_secion .contact_form  .input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1vw;
+    font-size: 1.1vw;
+    color: white;
+    resize: none;
+    outline: none;
+}
+.contact .main_secion .contact_form .input::-webkit-input-placeholder{
+color: white;
+}
+.contact .main_secion .contact_form .input::-moz-placeholder{
+color: white;
+}
+.contact .main_secion .contact_form .input:-ms-input-placeholder{
+color: white;
+}
+.contact .main_secion .contact_form .input::-ms-input-placeholder{
+color: white;
+}
+.contact .main_secion .contact_form .input::placeholder{
+color: white;
+}
+.contact .main_secion .contact_form #textarea{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+}
+.contact .main_secion .contact_form textarea{
+    height: 10vw;
+}
+.contact .main_secion .contact_form .sub_btn{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: 0px;
+    text-align: center;
+    font-weight: 900;
+}
+@media screen and (max-width:1300px) {
+    .contact{
+        padding: 1vw 3vw;
+        padding-bottom: 2vw;
+        gap: 1.2vw;
+    }
+    .contact .heading h1{
+        font-size: 4.2vw;
+    }
+    .contact p{
+        font-size: 1.4vw;
+    }
+    .contact .main_secion .contact_info .card h2{
+        font-size: 1.7vw;
+    }
+    .contact .main_secion .contact_form {
+        gap: 0.7vw;
+    }
+    .contact .main_secion .contact_form .inputs{
+        gap: 0.7vw;
+    }
+    .contact .main_secion .contact_form  .input{
+        width: 100%;
+        padding: 1.2vw;
+        font-size: 1.3vw;
+    }
+    .contact .main_secion .contact_info {
+        gap: 1.2vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .contact{
+        padding: 2vw 3vw;
+        padding-bottom: 3vw;
+        gap: 2vw;
+    }
+    .contact .heading h1{
+        font-size: 6.5vw;
+    }
+    .contact  p{
+        font-size: 2vw;
+    }
+    .contact .main_secion{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 2vw;
+    }
+    .contact .main_secion .contact_form {
+        width: 100%;
+        gap: 1vw;
+    }
+    .contact .main_secion .contact_info {
+        gap: 2vw;
+        width: 100%;
+    }
+    .contact .main_secion .contact_info .card h2{
+        font-size: 2vw;
+    }
+    .contact .main_secion .contact_form .inputs{
+        gap: 1vw;
+    }
+    .contact .main_secion .contact_form  .input{
+        width: 100%;
+        padding: 2vw;
+        font-size: 1.9vw;
+    }
+    .contact .main_secion .contact_form textarea{
+        height: 20vw;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .contact{
+        padding: 3vw 3vw;
+        margin-top: 6vw;
+        gap: 2.5vw;
+    }
+    .contact .heading h1{
+        font-size: 8vw;
+    }
+    .contact  p{
+        font-size: 2.5vw;
+    }
+    .contact .main_secion{
+        gap: 2.5vw;
+    }
+    .contact .main_secion .contact_form {
+        gap: 0.7vw;
+        width: 100%;
+        gap: 1.2vw;
+    }
+    .contact .main_secion .contact_info {
+        gap: 2.5vw;
+        width: 100%;
+    }
+    .contact .main_secion .contact_info .card h2{
+        font-size: 2.5vw;
+    }
+    .contact .main_secion .contact_form .inputs{
+        gap: 1.2vw;
+    }
+    .contact .main_secion .contact_form  .input{
+        padding: 2.5vw;
+        font-size: 2.4vw;
+    }
+    .contact .main_secion .contact_form textarea{
+        height: 25vw;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .contact{
+        padding: 4vw 3vw;
+        margin-top: 6vw;
+        padding-bottom: 4vw;
+        gap: 5vw;
+    }
+    .contact .heading h1{
+        font-size:11vw;
+    }
+    .contact  p{
+        font-size: 4vw;
+    }
+    .contact .main_secion{
+        gap: 5vw;
+    }
+    .contact .main_secion .contact_form {
+        gap: 2.5vw;
+    }
+    .contact .main_secion .contact_info {
+        gap: 5vw;
+    }
+    .contact .main_secion .contact_info .card h2{
+        font-size: 4vw;
+    }
+    .contact .main_secion .contact_form .inputs{
+        gap: 2.5vw;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact .main_secion .contact_form  .input{
+        padding: 3.5vw;
+        font-size: 4vw;
+    }
+    .contact .main_secion .contact_form textarea{
+        height: 30vw;
+    }
+    
+}

@@ -1,0 +1,250 @@
+.listing{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2vw 3vw;
+    padding-bottom: 0vw;
+    gap: 1vw;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+.listing .heading{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.listing .heading{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4vw;
+}
+.listing .heading h1{
+    font-size: 4vw;
+}
+.listing .heading .links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5vw;
+    padding-top: 1.5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+}
+.listing .heading .links a{
+    font-size: 1.5vw;
+    color: black;
+    font-weight: 900;
+}
+.listing .heading .links  .active{
+    border-bottom: 4px solid   rgb(0,23,49);
+    padding-bottom: 0.2vw;
+}
+.listing .properties{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr 1vw 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2vw 0.5vw;
+}
+.listing .properties .card{
+    width: 100%;
+}
+.listing .properties .card img{
+    width: 100%;
+}
+.listing .properties .card .content{
+    padding: 1vw 0vw;
+}
+.listing .properties .card h2{
+    font-size: 1.5vw;
+}
+.listing .properties .card h2 span{
+    color:rgb(0,23,49) ;
+}
+.listing .properties .card h3{
+    font-size: 1.2vw;
+    color: rgb(0,35,73);
+}
+.listing .properties .card p{
+    font-size: 1vw;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+    padding-top: 0.5vw;
+}
+@media screen and (max-width:1400px) {
+    .listing .properties .card h3{
+        font-size: 1.3vw;
+    }
+    .listing .properties .card p{
+        font-size: 1.1vw;
+    }
+}
+@media screen and (max-width:1300px) {
+    .listing{
+        gap: 1.2vw;
+    }
+    .listing .heading h1{
+        font-size: 4.2vw;
+    }
+    .listing .heading .links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 2vw;
+        padding-top: 1.5vw;
+    }
+    .listing .heading .links  a{
+        font-size: 1.7vw;
+    }
+    .listing .properties{
+        -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2vw 0.5vw;
+    }
+    .listing .properties .card .content{
+        padding: 1.2vw 0vw;
+    }
+    .listing .properties .card h2{
+        font-size: 1.7vw;
+    }
+    .listing .properties .card h3{
+        font-size: 1.4vw;
+    }
+    .listing .properties .card p{
+        font-size: 1.2vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .listing{
+        gap: 2vw;
+    }
+    .listing .heading{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        gap: 1vw;
+    }
+    .listing .heading h1{
+        font-size: 6.5vw;
+    }
+    .listing .heading .links{
+        padding-top: 0vw;
+        gap: 4vw;
+    }
+    .listing .heading .links  a{
+        font-size: 3vw;
+    }
+    .listing .properties .card .content{
+        padding: 1.5vw 0vw;
+    }
+    .listing .properties .card h2{
+        font-size: 2vw;
+    }
+    .listing .properties .card h3{
+        font-size: 2vw;
+    }
+    .listing .properties .card p{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .listing{
+        padding: 6vw 3vw;
+        gap: 2.5vw;
+        padding-bottom: 0vw;
+    }
+    .listing .heading{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 1.5vw;
+    }
+    .listing .heading h1{
+        font-size: 8vw;
+    }
+    .listing .heading .links{
+        gap: 3.5vw;
+    }
+    .listing .heading .links  a{
+        font-size: 3vw;
+    }
+    .listing .properties{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2vw 1vw;
+    }
+    .listing .properties .card h2{
+        font-size: 3vw;
+    }
+    .listing .properties .card h3{
+        font-size: 2.5vw;
+    }
+    .listing .properties .card p{
+        font-size: 2.2vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .listing{
+        padding: 8vw 3vw;
+        padding-bottom: 0vw;
+        gap: 5vw;
+    }
+    .listing .heading{
+        gap: 3vw;
+    }
+    .listing .heading h1{
+        font-size: 11vw; 
+        
+    }
+    .listing .heading .links{
+        gap: 6vw;
+    }
+    .listing .heading .links  a{
+        font-size: 5vw;
+    }
+    .listing .properties{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4vw 1vw;
+    }
+    .listing .properties .card .content{
+     padding: 1.5vw 0vw;
+    }
+    .listing .properties .card h2{
+        font-size: 6vw;
+    }
+    .listing .properties .card h3{
+        font-size: 4vw;
+    }
+    .listing .properties .card p{
+        font-size: 3.5vw;
+        padding-top: 1vw;
+    }
+}

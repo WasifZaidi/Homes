@@ -1,0 +1,393 @@
+
+.navbar{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0vw;
+    color: white;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+.navbar .top_section{
+    width: 100%;
+    background-color: rgb(0,23,49);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5vw 1vw;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 1vw;
+}
+.navbar .top_section p{
+    font-size: 1vw;
+    gap: 0.1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.navbar .mid_section{
+    background-color: rgb(0,35,73);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5vw 2vw;
+    border-bottom: 1px solid gainsboro;
+}
+.navbar .mid_section h1{
+    font-size: 2vw;
+}
+.navbar  .links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5vw;
+}
+.navbar .mid_section .links a{
+    font-size: 1vw;
+    color: white;
+}
+.navbar .mid_section .links a:nth-child(8){
+   border: 1px solid goldenrod;
+   padding: 0.5vw 1vw;
+}
+.navbar .mid_section .res_nav_icon{
+    display: none;
+}
+.navbar .bottom_section{
+    width: 100%;
+    padding: 1vw 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-align: end;
+         -ms-flex-align: end;
+             align-items: end;
+     background-color: rgb(0,35,73);
+}
+.navbar .bottom_section .left{
+    width: 45%;
+}
+.navbar .bottom_section .left h1{
+    font-size: 3vw;
+    font-weight: 100;
+    width: 90%;
+}
+.navbar .bottom_section .right{
+    width: 55%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5vw;
+}
+.navbar .bottom_section .right a{
+font-size: 1.2vw;
+color: white;
+}
+.navbar .bottom_section .right .active{
+    color: goldenrod;
+  
+  }
+
+.navbar .bottom_section .right .search{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5vw;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    position: relative;
+    padding-bottom: 0.5vw;
+}
+.navbar .bottom_section .right .search .icon{
+font-size: 1.5vw;
+}
+.navbar .bottom_section .right .search a{
+    font-size: 1.5vw;
+    color: white;
+}
+.navbar .bottom_section .right .search .arrow_icon{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+.navbar .bottom_section .right .search .arrow_icon .icon{
+   font-size: 2vw;
+}
+@media screen and (max-width:1400px) {
+    .navbar .top_section{
+        padding: 0.7vw 1.2vw;
+        gap: 1.2vw;
+    }
+    .navbar .top_section p{
+        font-size: 1.2vw;
+    }
+    .navbar .mid_section{
+        padding: 0.7vw 2vw;
+    }
+    .navbar .mid_section h1{
+        font-size: 2.2vw;
+    }
+    .navbar  .links{
+        gap: 1.5vw;
+    }
+    .navbar .mid_section .links a{
+        font-size: 1.2vw;
+    }
+    .navbar .mid_section .links a:nth-child(6){
+       padding: 0.7vw 1.2vw;
+    }
+    .navbar .bottom_section{
+        padding: 1.2vw 10vw;
+    }
+    .navbar .bottom_section .left{
+        width: 47%;
+    }
+    .navbar .bottom_section .left h1{
+        font-size: 3.2vw;
+    }
+    .navbar .bottom_section .right{
+        width: 53%;
+        gap: 1.5vw;
+    }
+    .navbar .bottom_section .right a{
+    font-size: 1.4vw;
+    }
+    .navbar .bottom_section .right .search{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 0.7vw;
+        padding-bottom: 0.7vw;
+    }
+    .navbar .bottom_section .right .search .icon{
+    font-size: 1.7vw;
+    }
+    .navbar .bottom_section .right .search a{
+        font-size: 1.7vw;
+    }
+    .navbar .bottom_section .right .search .arrow_icon .icon{
+       font-size: 2.2vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .navbar .top_section{
+        padding: 1vw 1.4vw;
+        gap: 1.2vw;
+    }
+    .navbar .top_section p{
+        font-size: 1.5vw;
+    }
+    .navbar .mid_section{
+        padding: 1vw 2vw;
+    }
+    .navbar .mid_section h1{
+        font-size: 3vw;
+    }
+    .navbar  .links{
+        gap: 2vw;
+    }
+    .navbar .mid_section .links a{
+        font-size: 1.7vw;
+    }
+    .navbar .mid_section .links a:nth-child(6){
+       padding: 1vw 1.2vw;
+    }
+    .navbar .bottom_section{
+        padding: 1.2vw 10vw;
+    }
+    .navbar .bottom_section .left{
+        width: 49%;
+    }
+    .navbar .bottom_section .left h1{
+        font-size: 3.4vw;
+    }
+    .navbar .bottom_section .right{
+        width: 51%;
+        gap: 1.5vw;
+    }
+    .navbar .bottom_section .right a{
+    font-size: 2vw;
+    }
+    .navbar .bottom_section .right .search{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1vw;
+        padding-bottom: 1vw;
+    }
+    .navbar .bottom_section .right .search .icon{
+    font-size: 2vw;
+    }
+    .navbar .bottom_section .right .search a{
+        font-size: 2vw;
+    }
+    .navbar .bottom_section .right .search .arrow_icon .icon{
+       font-size: 3.2vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar .top_section{
+        padding: 1.5vw 1.4vw;
+        gap: 2vw;
+    }
+    .navbar .top_section p{
+        font-size: 2vw;
+        gap: 1vw;
+    }
+    .navbar .mid_section{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 1vw 5vw;
+    }
+    .navbar .mid_section .links{
+        display: none;
+    }
+    .navbar .mid_section .res_nav_icon{
+        display: block;
+    }
+    .navbar .mid_section h1{
+        font-size: 5vw;
+    }
+    .navbar .mid_section .res_nav_icon .icon{
+        font-size: 6vw;
+        padding-top: 1vw;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+    .navbar .bottom_section{
+        padding: 2vw 5vw;
+        gap: 4vw;
+    }
+    .navbar .bottom_section .left{
+        width: 50%;
+    }
+    .navbar .bottom_section .left h1{
+        font-size: 5vw;
+        width: 100%;
+    }
+    .navbar .bottom_section .right{
+        width: 50%;
+        gap: 1.5vw;
+    }
+    .navbar .bottom_section .right a{
+    font-size: 2.5vw;
+    }
+    .navbar .bottom_section .right .search{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1vw;
+        padding-bottom: 1vw;
+    }
+    .navbar .bottom_section .right .search .icon{
+    font-size: 2.5vw;
+    }
+    .navbar .bottom_section .right .search a{
+        font-size: 2.5vw;
+    }
+    .navbar .bottom_section .right .search .arrow_icon .icon{
+       font-size: 3.5vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .navbar .top_section{
+        padding: 4vw 2vw;
+        gap: 4vw;
+    }
+    .navbar .top_section p{
+        font-size: 4vw;
+        gap: 1vw;
+    }
+    .navbar .mid_section{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 2vw 5vw;
+    }
+    .navbar .mid_section .links{
+        display: none;
+    }
+    .navbar .mid_section .res_nav_icon{
+        display: block;
+    }
+    .navbar .mid_section h1{
+        font-size: 10vw;
+    }
+    .navbar .mid_section .res_nav_icon .icon{
+        font-size: 10vw;
+        padding-top: 1.5vw;
+    }
+    .navbar .bottom_section{
+        padding: 3vw 5vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        gap: 6vw;
+    }
+    .navbar .bottom_section .left{
+        width: 100%;
+    }
+    .navbar .bottom_section .left h1{
+        font-size: 9vw;
+    }
+    .navbar .bottom_section .right{
+        width: 100%;
+        gap: 4vw;
+    }
+    .navbar .bottom_section .right .links{
+    gap: 6vw;
+    }
+    .navbar .bottom_section .right a{
+    font-size: 6vw;
+    }
+    .navbar .bottom_section .right .search{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 2vw;
+        padding-bottom: 1.5vw;
+    }
+    .navbar .bottom_section .right .search .icon{
+    font-size: 6vw;
+    }
+    .navbar .bottom_section .right .search a{
+        font-size: 6vw;
+    }
+    .navbar .bottom_section .right .search .arrow_icon .icon{
+       font-size: 7vw;
+    }
+}

@@ -1,0 +1,262 @@
+.header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Hedvig Letters Serif', serif;
+    padding: 2vw 2vw;
+    padding-bottom: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.header .upper{
+    width: 70%;
+}
+.header .upper h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+.header .upper p{
+    font-size: 1.3vw;
+}
+.header .bottom{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.5vw;
+}
+.header .bottom .section{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 0.5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.header .bottom .section h2{
+width: -webkit-max-content;
+width: -moz-max-content;
+width: max-content;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 100%;
+border-bottom: 2px solid white;
+padding-bottom: 0.5vw;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: end;
+font-size: 1.5vw;
+font-weight: 500;
+}
+.header .bottom .section a{
+    font-size: 1.2vw;
+    padding: 1vw 1vw;
+    border: 1px solid white;
+    color: white;
+}
+.header .bottom .section p{
+font-size: 1.2vw;
+padding: 0.5vw 1vw;
+cursor: pointer;
+border: 1px solid white;
+-webkit-animation-name: datanimation;
+        animation-name: datanimation;
+-webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+-webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+-webkit-transition: 0.5s all ease;
+-o-transition: 0.5s all ease;
+transition: 0.5s all ease;
+}
+.header .bottom .section p:hover{
+ background-color: white;
+ color: black;
+}
+.header .bottom .section .find{
+    text-align: center;
+}
+.header .bottom .section .data{
+    display: none;
+}
+@-webkit-keyframes datanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes datanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:1300px) {
+    .header{
+        padding: 2.2vw 2vw;
+        padding-bottom: 3.2vw;
+        gap: 1.2vw;
+    }
+    .header .upper{
+        width: 70%;
+    }
+    .header .upper h1{
+        font-size: 4.2vw;
+    }
+    .header .upper p{
+        font-size: 1.5vw;
+    }
+    .header .bottom .section{
+        padding: 0.5vw 0vw;
+        width: 100%;
+        gap: 1vw;
+    }
+    
+    .header .bottom .section h2{
+    font-size: 1.7vw;
+    padding-bottom: 0.7vw;
+    gap: 1vw;
+    }
+    .header .bottom .section p{
+        font-size: 1.4vw;
+        padding: 1vw 1vw;
+        }
+    .header .bottom .section a{
+        font-size: 1.4vw;
+        padding: 1.2vw 1vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .header{
+        gap: 2vw;
+    }
+    .header .upper{
+        width: 100%;
+    }
+    .header .upper h1{
+        font-size: 5vw;
+    }
+    .header .upper p{
+        font-size: 2.2vw;
+    }
+    .header .bottom{
+        width: 100%;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1vw;
+    }
+    .header .bottom .section{
+        width: 100%;
+        gap: 1vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .header .bottom .section h2{
+        font-size: 2.5vw;
+        padding-bottom: 0.7vw;
+    }
+    .header .bottom .section p{
+        font-size: 2vw;
+        padding: 1vw 1vw;
+        }
+    .header .bottom .section a{
+        font-size: 2vw;
+        padding: 1.5  
+        
+        vw 1vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        gap: 4vw;
+        padding: 3vw 3vw;
+        padding-bottom: 5vw;
+    }
+    .header .upper{
+        width: 100%;
+    }
+    .header .upper h1{
+        font-size: 7vw;
+    }
+    .header .upper p{
+        font-size: 3vw;
+    }
+    .header .bottom{
+        gap: 1vw;
+    }
+    .header .bottom .section{
+        gap: 2vw;
+    }
+    .header .bottom .section h2{
+        font-size: 3vw;
+        padding-bottom: 1vw;
+    }
+    .header .bottom .section h2 .icon{
+        font-size: 3.5vw;
+    }
+    .header .bottom .section p{
+        font-size: 3vw;
+        padding: 1.5vw 1vw;
+        }
+    .header .bottom .section a{
+        font-size: 3vw;
+        padding: 1.7vw 1vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .header{
+        gap: 6vw;
+        padding: 6vw 3vw;
+        padding-bottom: 9vw;
+    }
+    .header .upper{
+        width: 100%;
+    }
+    .header .upper h1{
+        font-size: 9vw;
+    }
+    .header .upper p{
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .header .bottom{
+        gap: 2vw;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header .bottom .section{
+        gap: 2vw;
+    }
+    .header .bottom .section h2{
+        font-size: 5vw;
+        padding-bottom: 2vw;
+    }
+    .header .bottom .section h2 .icon{
+        font-size: 6vw;
+    }
+    .header .bottom .section p{
+        font-size: 3.5vw;
+        padding: 2.5vw 1vw;
+        }
+    .header .bottom .section a{
+        font-size: 4.5vw;
+        padding: 4vw 2vw;
+    }
+}

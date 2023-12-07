@@ -1,0 +1,134 @@
+.latest_news{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+    font-family: 'Hedvig Letters Serif', serif;
+    padding: 5vw 3vw;
+    padding-bottom: 0vw;
+}
+.latest_news .heading{
+    width: 100%;
+}
+.latest_news .heading h1{
+    font-size: 4vw;
+}
+.latest_news .heading h1{
+    font-size: 4vw;
+}
+.latest_news .main_section{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr 1vw 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2vw 0.5vw;
+}
+.latest_news .main_section .card{
+    width: 100%;
+}
+.latest_news .main_section .card img{
+    width: 100%;
+}
+.latest_news .main_section .card .content{
+    padding: 1vw 0vw;
+}
+.latest_news .main_section .card .content h3{
+font-size: 1.2vw;
+}
+.latest_news .main_section .card .content p{
+    font-size: 1vw;
+    font-weight: 600;
+    padding-top: 0.5vw;
+}
+@media screen and (max-width:1400px) {
+    .latest_news .main_section .card .content h3{
+        font-size: 1.3vw;
+  }
+        .latest_news .main_section .card .content p{
+        font-size: 1.1vw;
+   }
+}
+@media screen and (max-width:1300px) {
+        .latest_news{
+            gap: 1.2vw;
+        }
+        .latest_news .heading h1{
+            font-size: 4.2vw;
+        }
+        .latest_news .main_section{
+            -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2vw 0.5vw;
+        }
+        .latest_news .main_section .card .content h3{
+            font-size: 1.4vw;
+      }
+            .latest_news .main_section .card .content p{
+            font-size: 1.3vw;
+       }
+}
+@media screen and (max-width:1024px) {
+    .latest_news{
+        gap: 2vw;
+    }
+    .latest_news .heading h1{
+        font-size: 6.5vw;
+    }
+    .latest_news .main_section .card .content h3{
+        font-size: 2vw;
+  }
+        .latest_news .main_section .card .content p{
+        font-size: 1.6vw;
+   }
+}
+@media screen and (max-width:768px) {
+    .latest_news{
+        padding: 6vw 3vw;
+        gap: 2.5vw;
+        padding-bottom: 0vw;
+    }
+    .latest_news .heading h1{
+        font-size: 8vw;
+    }
+    .latest_news .main_section{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 2vw 1vw;
+    }
+    .latest_news .main_section .card .content h3{
+        font-size: 2.5vw;
+  }
+        .latest_news .main_section .card .content p{
+        font-size: 2.2vw;
+   }
+}
+@media screen and (max-width:500px) {
+    .latest_news{
+        padding: 8vw 3vw;
+        padding-bottom: 0vw;
+        gap: 5vw;
+    }
+    .latest_news .heading h1{
+        font-size: 11vw; 
+    }
+    .latest_news .main_section{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4vw 1vw;
+    }
+    .latest_news .main_section .card .content h3{
+        font-size: 4.5vw;
+  }
+        .latest_news .main_section .card .content p{
+        font-size: 4vw;
+        padding-top: 1vw;
+   }
+}

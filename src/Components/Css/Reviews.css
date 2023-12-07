@@ -1,0 +1,294 @@
+.Reviews{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+    padding: 5vw 5vw;
+    padding-bottom: 0vw;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+.Reviews .heading{
+    width: 100%;
+}
+.Reviews .heading h1{
+    font-size: 4vw;
+    width: 50%;
+}
+.Reviews .main_section{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.5vw;
+}
+.Reviews .main_section .card{
+    width: 100%;
+    position: relative;
+}
+.Reviews .main_section .card img{
+    width: 100%;
+    display: block;
+}
+.Reviews .main_section .card .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1vw 2vw;
+}
+.Reviews .main_section .card .content:hover{
+    background-color: rgba(0,0,0,0.7);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+   .review{
+    display: block;
+   }
+}
+.Reviews .main_section .card .content .data{
+ width: 100%;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: end;
+     -ms-flex-align: end;
+         align-items: end;
+ gap: 1vw;
+}
+.Reviews .main_section .card .content .data .avatar{
+    width: 15%;
+}
+.Reviews .main_section .card .content .data .avatar img{
+        width: 100%;
+        border-radius: 50px;
+ }
+.Reviews .main_section .card .content .data .name{
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.Reviews .main_section .card .content .data .name h2{
+ font-size: 1.2vw;
+}
+.Reviews .main_section .card .content .data .name .stars{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.1vw;
+}
+.Reviews .main_section .card .content .data .name .stars .icon{
+    font-size: 1vw;
+    color: goldenrod;
+}
+.Reviews .main_section .card .content .data .name .stars p{
+    font-size: 1vw;
+    padding-left: 0.5vw;
+}
+.Reviews .main_section .card .content .review{
+    display: none;
+}
+.Reviews .main_section .card .content .review p{
+   font-size: 1.1vw;
+   -webkit-animation-name: paraanimation;
+           animation-name: paraanimation;
+   -webkit-animation-duration: 0.5s;
+           animation-duration: 0.5s;
+   -webkit-animation-iteration-count: 1;
+           animation-iteration-count: 1;
+}
+@-webkit-keyframes  paraanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes  paraanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:1400px) {
+    .Reviews .main_section .card .content .data .name h2{
+        font-size: 1.3vw;
+    }
+    .Reviews .main_section .card .content .review p{
+        font-size: 1.2vw;
+     }
+     .Reviews .main_section .card .content .data .name .stars p{
+        font-size: 1.1vw;
+        padding-left: 0.7vw;
+    }
+    .Reviews .main_section .card .content .data .name .stars .icon{
+        font-size: 1.2vw;
+    }
+}
+@media screen and (max-width:1300px) {
+    .Reviews{
+        gap: 1.2vw;
+    }
+    .Reviews .heading h1{
+        font-size: 4.2vw;
+    }
+    .Reviews .main_section .card .content .data .name h2{
+        font-size: 1.4vw;
+    }
+    .Reviews .main_section .card .content .review p{
+        font-size: 1.3vw;
+     }
+     .Reviews .main_section .card .content .data .name .stars p{
+        font-size: 1.2vw;
+    }
+    .Reviews .main_section .card .content .data .name .stars .icon{
+        font-size: 1.2vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .Reviews{
+        gap: 2vw;
+        padding: 5vw 3vw;
+        padding-bottom: 0vw;
+    }
+    .Reviews .heading h1{
+        font-size: 6.5vw;
+        width: 100%;
+    }
+    .Reviews .main_section{
+        -ms-grid-columns: 1fr 1vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap:2vw 1vw;
+    }
+    .Reviews .main_section .card .content{
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        background-color: white;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        color: black;
+        gap: 1vw;
+        padding: 2vw 0vw;
+    }
+    .Reviews .main_section .card .content:hover{
+        background-color:white;
+   }
+   .Reviews .main_section .card .content .data .name h2{
+    font-size: 2.5vw;
+}
+   .Reviews .main_section .card .content .data .name .stars p{
+    font-size: 2vw;
+}
+.Reviews .main_section .card .content .data .name .stars .icon{
+    font-size: 2vw;
+}
+   .Reviews .main_section .card .content .review{
+    display: block;
+}
+.Reviews .main_section .card .content .review p{
+    font-size: 2vw;
+ }
+    
+}
+@media screen and (max-width:768px) {
+    .Reviews{
+        gap: 2.5vw;
+        padding: 6vw 3vw;
+        padding-bottom: 0vw
+    }
+    .Reviews .heading h1{
+        font-size: 8vw;
+    }
+    .Reviews .main_section .card .content{
+        gap: 2vw;
+    }
+    .Reviews .main_section .card .content .data {
+       gap: 1.5vw;
+    }
+    .Reviews .main_section .card .content .data .avatar{
+        width: 20%;
+    }
+    .Reviews .main_section .card .content .data .name{
+        width: 80%;
+    }
+    .Reviews .main_section .card .content .data .name h2{
+        font-size: 3vw;
+    }
+       .Reviews .main_section .card .content .data .name .stars p{
+        font-size: 2.5vw;
+    }
+    .Reviews .main_section .card .content .data .name .stars .icon{
+        font-size: 2.5vw;
+    }
+    .Reviews .main_section .card .content .review p{
+        font-size: 2.5vw;
+     }
+}
+@media screen and (max-width:500px) {
+    .Reviews{
+        gap: 5vw;
+        padding: 8vw 3vw;
+        padding-bottom: 0vw;
+    }
+    .Reviews .heading h1{
+        font-size: 11vw;
+        text-align: center;
+    }
+    .Reviews .main_section{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap:4vw 1vw;
+    }
+    .Reviews .main_section .card .content{
+        gap: 3vw;
+    }
+    .Reviews .main_section .card .content .data .avatar{
+        width: 15%;
+    }
+    .Reviews .main_section .card .content .data .name{
+        width: 85%;
+    }
+    .Reviews .main_section .card .content .data .name h2{
+        font-size: 5vw;
+    }
+       .Reviews .main_section .card .content .data .name .stars p{
+        font-size: 4vw;
+        padding-left: 2vw
+    }
+    .Reviews .main_section .card .content .data .name .stars .icon{
+        font-size: 4vw;
+    }
+    .Reviews .main_section .card .content .review p{
+        font-size: 4vw;
+     }
+}

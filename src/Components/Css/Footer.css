@@ -1,0 +1,377 @@
+.footer{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            font-family: 'Hedvig Letters Serif', serif;
+    gap: 2vw;
+    margin-top: 5vw;
+    padding: 0vw 3vw;
+    padding-top: 1vw;
+}
+.footer .upper_section{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.footer .upper_section .heading{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+    width: 100%;
+}
+.footer .upper_section .heading h1{
+  font-size: 3vw;
+}
+.footer .upper_section .heading .social_media{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1vw;
+    gap: 1vw;
+}
+.footer .upper_section .heading .social_media .icon{
+    font-size: 2vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0.5vw;
+    border-radius: 50px;
+    background-color: rgb(19, 19, 19);
+}
+.footer .upper_section p{
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer .lower_section{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+    gap: 1vw;
+}
+.footer .lower_section .links{
+    margin: 1vw 0vw;
+}
+.footer .lower_section .links a{
+    background-color: transparent;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+}
+.footer .lower_section ul{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+}
+.footer .lower_section .subscribe{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.footer .lower_section .subscribe p{
+    font-size: 1.2vw;
+    width: 30%;
+}
+.footer .lower_section .subscribe .inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.footer .lower_section input{
+    font-size: 1.1vw;
+    padding: 1vw;
+    border: 0px;
+    background-color: gainsboro;
+    color: black;
+    outline: none;
+}
+.footer .lower_section a{
+    background-color: rgb(104, 104, 104);
+    text-align: center;
+    font-size: 1.1vw;
+    color: white;
+    height: 100%;
+    padding: 1vw;
+}
+.footer .copy_right{
+    padding: 1vw;
+    border-top: 1px solid white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer .copy_right p{
+    font-size: 1.1vw;
+}
+@media screen and (max-width:1300px) {
+    .footer{
+        gap: 2.2vw;
+    }
+    .footer .upper_section .heading h1{
+        font-size: 4vw;
+      }
+      .footer .upper_section .heading .social_media .icon{
+        font-size: 2.4vw;
+        padding: 0.7vw;
+    }
+    .footer .upper_section{
+        gap: 1.2vw;
+    }
+      .footer .upper_section p{
+        font-size: 1.4vw;
+    }
+    
+    .footer .lower_section{
+        gap: 1.2vw;
+    }
+    .footer .lower_section .links a{
+        font-size: 1.4vw;
+        padding: 1.2vw 2vw;
+    }
+    .footer .lower_section input{
+        font-size: 1.2vw;
+        padding: 1.1vw;
+    }
+    .footer .copy_right p{
+        font-size: 1.3vw;
+        padding-top: 1.2vw;
+    }      
+}
+@media screen and (max-width:1024px) {
+    .footer{
+        gap: 2.5vw;
+        padding-top:3vw;
+    }
+    /* .footer .upper_section{
+        gap: 2vw;
+    } */
+    .footer .upper_section .heading{
+        gap: 2vw;
+    }
+    .footer .upper_section .heading h1{
+      font-size: 5.5vw;
+    }
+    .footer .upper_section p{
+        font-size: 2vw;
+    }
+    .footer .upper_section .heading .social_media{
+        gap: 2vw;
+    }
+    .footer .upper_section .heading .social_media .icon{
+        font-size: 3.5vw;
+        padding: 1.2vw;
+    }
+    .footer .lower_section{
+        gap: 2vw;
+    }
+    .footer .lower_section ul{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 6vw 1vw;
+    }
+    .footer .lower_section .links{
+        margin: 1.5vw 0vw;
+    }
+    .footer .lower_section .links a{
+        font-size: 2vw;
+        padding: 2vw 4vw;
+    }
+    .footer .lower_section .subscribe p{
+        font-size: 2vw;
+        width: 60%;
+    }
+    .footer .lower_section .subscribe{
+        gap: 2vw;
+    }
+    .footer .lower_section .subscribe .inputs{
+        width: 60%;
+    }
+    .footer .lower_section input{
+        font-size: 1.5vw;
+        padding: 1.5vw;
+    }
+    .footer .lower_section a{
+        font-size: 1.5vw;
+        padding: 1.5vw;
+    }
+    .footer .copy_right{
+        padding: 2vw;
+    }
+    .footer .copy_right p{
+        font-size: 1.9vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer{
+        gap: 4vw;
+        padding-top:5vw;
+        margin-top: 6vw;
+    }
+    .footer .upper_section{
+        gap: 2vw;
+    }
+    .footer .upper_section .heading{
+        gap: 2vw;
+    }
+    .footer .upper_section .heading h1{
+      font-size: 7.5vw;
+    }
+    .footer .upper_section p{
+        font-size: 2.5vw;
+    }
+    .footer .upper_section .heading .social_media{
+        gap: 2vw;
+    }
+    .footer .upper_section .heading .social_media .icon{
+        font-size: 4.5vw;
+        padding: 1.5vw;
+    }
+    .footer .lower_section{
+        gap: 3vw;
+    }
+    .footer .lower_section ul{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 6vw 1vw;
+    }
+    .footer .lower_section .links a{
+        font-size: 2.5vw;
+        padding: 2vw 4vw;
+    }
+    .footer .lower_section .subscribe p{
+        font-size: 2.5vw;
+        width: 70%;
+    }
+    .footer .lower_section .subscribe{
+        gap: 2vw;
+    }
+    .footer .lower_section .subscribe .inputs{
+        width: 80%;
+    }
+    .footer .lower_section input{
+        font-size: 2.5vw;
+        padding: 2vw;
+    }
+    .footer .lower_section a{
+        font-size: 2.5vw;
+        padding: 2vw;
+    }
+    .footer .copy_right{
+        padding: 2vw;
+    }
+    .footer .copy_right p{
+        font-size: 2.4vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .footer{
+        gap: 8vw;
+        margin-top: 8vw;
+        padding-top:7vw;
+    }
+    .footer .upper_section{
+        gap: 4vw;
+    }
+    .footer .upper_section .heading{
+        gap: 2vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+    .footer .upper_section .heading h1{
+      font-size: 10vw;
+    }
+    .footer .upper_section p{
+        font-size: 4vw;
+    }
+    .footer .upper_section .heading .social_media{
+        gap: 4vw;
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .footer .upper_section .heading .social_media .icon{
+        font-size: 8vw;
+        padding: 3vw;
+    }
+    .footer .lower_section{
+        gap: 6vw;
+    }
+    .footer .lower_section ul{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 12vw 2vw;
+    }
+    .footer .lower_section .links a{
+        font-size: 3.5vw;
+        padding: 4vw 8vw;
+    }
+    .footer .lower_section .subscribe p{
+        font-size: 4vw;
+        width: 100%;
+        padding-top: 2.5vw
+    }
+    .footer .lower_section .subscribe{
+        gap: 4vw;
+    }
+    .footer .lower_section .subscribe .inputs{
+        width: 100%;
+    }
+    .footer .lower_section input{
+        font-size: 4vw;
+        padding: 3.5vw;
+    }
+    .footer .lower_section a{
+        font-size: 4vw;
+        padding: 3.5vw;
+    }
+    .footer .copy_right{
+        padding: 4vw;
+    }
+    .footer .copy_right p{
+        font-size: 4vw;
+    }
+}

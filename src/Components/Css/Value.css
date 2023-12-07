@@ -1,0 +1,90 @@
+.value{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5vw 0.5vw;
+    padding: 2vw 5vw;
+    padding-bottom: 0vw;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+.value .card{
+    width: 100%;
+    background-color:rgb(0,23,49);
+    color: white;
+    padding: 1vw 2vw;
+    padding-bottom: 1.5vw;
+}
+.value .card h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.value .card p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width:1300px) {
+    .value .card{
+        padding: 1.2vw 2vw;
+        padding-bottom: 2vw;
+    }
+    .value .card h2{
+        font-size: 3.2vw;
+    }
+    .value .card p{
+        font-size: 1.4vw;
+        padding-top: 0.5vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .value {
+        padding: 4vw 3vw;
+        padding-bottom: 0vw;
+    }
+    .value .card h2{
+        font-size: 3.5vw;
+    }
+    .value .card p{
+        font-size: 2vw;
+        padding-top: 0.7vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .value {
+        padding: 6vw 3vw;
+        padding-bottom: 0vw;
+    }
+    .value .card{
+        padding: 2vw 1vw;
+    }
+    .value .card h2{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .value .card p{
+        font-size: 2.5vw;
+        text-align: center;
+        padding-top: 1vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .value {
+        padding: 8vw 3vw;
+        padding-bottom: 0vw;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1vw;
+    }
+    .value .card{
+        padding: 1.5vw 3vw;
+        padding-bottom: 4vw;
+    }
+    .value .card h2{
+        font-size: 7vw;
+    }
+    .value .card p{
+        font-size: 4vw;
+    }
+}
